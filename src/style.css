@@ -1,0 +1,114 @@
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(205, 237, 241);;
+}
+
+h1 {
+  color: rgb(12, 15, 17);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  text-align: center;
+  background-color: aliceblue;
+  border: solid black 0px;
+  height: 40px;
+  width: 450px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgb(11, 19, 18);
+
+}
+
+#tarjeta{
+  display: flex;
+  height: 210px;
+  width: 350px;
+  margin: 0 auto;
+}
+
+#Card {
+  border: solid black;
+  display: flex;
+  height: 250px;
+  width: 400px;
+  margin: 20px;
+  justify-content: center;
+  background-color: aliceblue;
+  border: 2px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgb(11, 19, 18);
+}
+
+#cardForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#cardNumber{
+  height: 30px;
+  width: 250px;
+  margin: 10px;
+  background-color: rgba(245, 245, 245, 1);
+  border: solid 1px rgb(7, 5, 5);
+  border-radius: 3px;
+  text-align: center;
+  font-style: inherit;
+}
+#check {
+  margin: 5px;
+  width: 100px;
+  height: 30px;
+  background-color: rgba(113, 160, 204, 0.81);
+  border: 0px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: rgba(245, 245, 245, 1);
+  box-shadow: 2px 2px 2px rgb(11, 19, 18);
+}
+#check:hover {
+  background-color: rgb(16, 168, 16);
+}
+#cardValidator {
+  margin: 3px;
+  width: 240px;
+  height: 40px;
+  border: 0px;
+  border-radius: 3px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 100%;
+
+}
+
+#recargar {
+  margin: 5px;
+  width: 150px;
+  height: 35px;
+  background-color: rgba(113, 160, 204, 0.81);
+  border: 0px;
+  color: aliceblue;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  box-shadow: 2px 2px 2px  rgb(3, 3, 7);
+}
+#recargar:hover {
+  background-color: rgb(16, 168, 16);
+}
+ 
+  
+
+  
+
+  
+  
