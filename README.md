@@ -28,6 +28,7 @@ Realise un prototipo a mano para tener una idea de lo que queria desarrollar en 
 luego de tener algunas difilcutades hable con mi coush el cual me guio para que me centrara en realizar la validacion de la tarjeta de credito y no tanto en los datos alternos ya que la base fundamental de este proyecto es poder validar la tarjeta de credito para evitar estafas y no revisar datos alternos como los nombres.
 
 Imagen del prototipo final:
+
 imagen:![Alt text](prototipo%20final.jpeg)
 
 Gracias
