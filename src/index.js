@@ -1,27 +1,25 @@
+import validator from "./validator.js";
 
-import validator from './validator.js';
+const number = document.getElementById("number");
+const result = document.getElementById("result");
+const btn = document.getElementById("btnPay");
 
-let elcardNumber = document.getElementById("cardNumber");
-const elcardValidation = document.getElementById("cardValidator");
+function printValidation() {
+  const cardNumber = number.value;
+  const isValid = validator.isValid(cardNumber);
+  if (isValid) {
+    result.innerHTML = "Tarjeta válida";
+  } else {
+    result.innerHTML = "Tarjeta inválida";btn
+  }
 
-const checkCC = () => {  
-    let message = "";
+  const coverNumber = validator.maskify(cardNumber, "#", 4);
+  number.value = coverNumber;
+}
 
-    if (validator.isValid(elcardNumber.value))
-        message = "Número valido";
-    else
-        message = "Número invalido";
-
-    // Inicializar input con resultado
-    elcardValidation.value = message;
-};
-
-// Evento botón submit
-document.getElementById("cardForm").addEventListener("submit", (e) => {
-    e.preventDefault()
-    checkCC()
-    const maskifyNumber = validator.maskify(elcardNumber.value)
-    console.log (maskifyNumber);
-    elcardNumber.value = maskifyNumber;
-    
+btn.addEventListener("click", printValidation);
+const numberr = document.getElementById("number");
+numberr.addEventListener("keyup", (event) => {
+  const num = event.target.value;
+  event.target.value = num.replace(/\s/g, "").replace(/\D/g,"");
 });

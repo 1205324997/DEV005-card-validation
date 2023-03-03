@@ -1,62 +1,47 @@
 const validator = {
-  isValid: (cardNumber) => {
-    const length = cardNumber.length;
-    let addDigits = 0;
-    if (length % 2 == 0) {
+  isValid: function (num) {
+    const cardNumberArray = Array.from(String(num), Number);
+    let positionSum = 0;
 
-      for (let i = length - 1; i >= 0; i--) 
-      {
-        let currentDigit = parseInt(cardNumber[i]);
-        if (i % 2 == 0) 
-        { currentDigit *= 2;
-          if (currentDigit > 9) 
-          {
-          
-            let firstNumber = parseInt(currentDigit / 10); 
-            let trailingNumber = currentDigit % 10; 
+    for (let i = cardNumberArray.length - 1; i >= 0; i--) {
+      let multiplication = 0;
 
-            
-            currentDigit = firstNumber + trailingNumber;
+      if (i % 2 === 0) {
+        multiplication = cardNumberArray[i] * 2;
+        if (multiplication >= 10) {
+          let remainder = 0;
+          let sumOfDigits = 0;
+
+          while (multiplication) {
+            remainder = multiplication % 10;
+            sumOfDigits = sumOfDigits + remainder;
+            multiplication = Math.floor(multiplication / 10);
           }
-        }
-        addDigits += currentDigit; 
-      }
-    }
-    else {
-    
-      for (let i = length - 1; i >= 0; i--) {
-        let currentDigit = parseInt(cardNumber[i]);
-        if ((i - 1) % 2 == 0) 
-        { currentDigit *= 2;
-          if (currentDigit > 9) {
-            
-            let firstNumber = parseInt(currentDigit / 10);
-            let trailingNumber = currentDigit % 10;
 
-            
-            currentDigit = firstNumber + trailingNumber;
-          }
+          positionSum += sumOfDigits;
+        } else {
+          positionSum += multiplication;
         }
-
-        addDigits += currentDigit; 
-      }
-    }
-    const resultado = (addDigits % 10) === 0;
-    console.log(resultado, addDigits);
-    return resultado;
-  },
-  maskify: (cardNumber) => {
-    let myArray = []
-    for (let i = 0; i < cardNumber.length; i++) {
-      if (i < cardNumber.length - 4) {
-        myArray.push("#");
       } else {
-        myArray.push(cardNumber[i]);
+        positionSum += cardNumberArray[i];
       }
     }
-    return myArray.join("");
-  }
+
+    const final = positionSum % 10;
+
+    if (final === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  },
+
+  maskify: function (string, mask, numberOfDigits) {
+    return (
+      ("" + string).slice(0, -numberOfDigits).replace(/./g, mask) +
+      ("" + string).slice(-numberOfDigits)
+    );
+  },
 };
 
 export default validator;
-

@@ -1,49 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <meta charset="utf-8" />
+    <title>Validador de Tarjeta de Crédito</title>
     <link rel="stylesheet" href="style.css" />
+    <h1>Validador de Tarjeta de Crédito</h1>
+      <img class="tarjeta" src="./Img/Pan.jpg" alt="complete icon">
   </head>
-    <body>
-      <header>
-    
-          <h1>Tarjeta de crédito válida</h1>
-    
-        </div>
-      </header>
-      <main>
+  <body>
+    <header></header>
 
-        </section>
-    
-    
-        <section id="cardholder">
-
-          <div id="cardholder">
-            <img id="tarjeta" src="./Img/Pan.jpg">
-          </div>
-
-          <div id="Card">
-            <form id="cardForm" autocomplete="off">
-              
-              <label for="cardNumber">Numero de tarjeta de credito</label>
-              <input type="text" id="cardNumber" value="" placeholder="Ej: 0000 0000 0000 0000" required
-                pattern="[0-9]{1,16}" maxlength="16" >             
-    
-              <input type="submit" class="boton" id="check" value="Validar">
-    
-              <input type="text" id="cardValidator" disabled="true"  placeholder="Confirmar">
-    
-              <button type="reset" class="boton" id="recargar">Recargar</button>
-            </form>
-          </div>
-        </section>
-    
-      </main>
-      <footer></footer>
-      <script src="index.js" type="module"></script>
-    </body>
-    
-    </html>
-
-    Josselyn ludena Dev005
+    <main>
+      <form action="" id="form">
+        <label class="numero"> Número de tarjeta</label>
+        <input
+          type="text" placeholder="Ej: 1234 5678 9876 0000" id="number" pattern="[0-9]"/>
+        <button type="button" id="btnPay">Validar</button>
+        <input type="reset" id="restablecer">
+      </form>
+      <section id="validatio">
+        <h3 id="result"></h3>
+      </section>
+    </main>
+    <footer>Josselyn Ludeña DV005</footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
