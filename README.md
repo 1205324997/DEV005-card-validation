@@ -14,18 +14,20 @@ Algoritmo-Luhn
 
 Página desplegada: 
 3. Investigación UX
-Objetivo y usuarios del producto:
-Realizar validaciones de los nymeros detarjetas de credito para ver si dichas tarjetas funcionan.
+Objetivo del producto:
+Realizar una pagina web interactiva de facíl navegación para válidar los números de tarjetas de credito ingresados.
 
 Por que se realizo este Proyecto
-En la actualidad es cada dia mas comun las estafas por ello se realizo este proyecto con el fin de validar el numero de la tarjeta de credito para ver si esta este numero es correcto o no y de esta manera facilitar los cobros con tarjetas y evitar estafas.
+En la actualidad es cada día mas común las estafas por ello se realizo este proyecto con el fin de válidar el número de las tarjeta de credito para saber si este número es correcto o no y de esta manera facilitar los cobros con tarjetas y evitando caer en estafas.
+
+Tambien realizamos un enmascarado para que nadie mas pueda ver el número de tarjeta ingresado exepto los 4 ultimos digitos.
 
 4. Prototipo en papel
-Realise un prototipo a mano para tener una idea de lo que queria desarrollar en mi proyecto.
+Realise un prototipo a mano para tener una idea de lo que queria desarrollar en mi proyecto visualmente.
 
 
 5. Prototipo
-luego de tener algunas difilcutades hable con mi coush el cual me guio para que me centrara en realizar la validacion de la tarjeta de credito y no tanto en los datos alternos ya que la base fundamental de este proyecto es poder validar la tarjeta de credito para evitar estafas y no revisar datos alternos como los nombres.
+luego de tener algunas difilcutades tecnicas converse con mi couch el cual me guio para poder seguir avanzando con mi proyecto centrandome en realizar la validación de la tarjeta de credito y no tanto en los datos alternos ya que la base fundamental de este proyecto es poder validar la tarjeta de credito de una forma facil y rapida.
 
 Imagen del prototipo final:
 

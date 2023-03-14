@@ -4,25 +4,23 @@
     <meta charset="utf-8" />
     <title>Validador de Tarjeta de Crédito</title>
     <link rel="stylesheet" href="style.css" />
-    <h1>Validador de Tarjeta de Crédito</h1>
-      <img class="tarjeta" src="./Img/Pan.jpg" alt="complete icon">
   </head>
   <body>
-    <header></header>
+    <header class="titulo"> Validador de Tarjeta de Crédito </header>
+      <img class="tarjeta" src="./imag/Pan.jpg" alt="Tarjeta de credito">
 
     <main>
       <form action="" id="form">
-        <label class="numero"> Número de tarjeta</label>
-        <input
-          type="text" placeholder="Ej: 1234 5678 9876 0000" id="number" pattern="[0-9]"/>
-        <button type="button" id="btnPay">Validar</button>
+        <label for="Número de tarjeta" class="numero"> Número de tarjeta</label>
+        <input type="text" placeholder="Ej: 1234 5678 9876 0000" id="number" pattern="[0-9]"/>
+        <button type="button" id="btnEnviar">Validar</button>
+        <section id="validation">
+          <center> <resultado id="result" /></center>
+        </section>
         <input type="reset" id="restablecer">
-      </form>
-      <section id="validatio">
-        <h3 id="result"></h3>
-      </section>
+      </form>    
     </main>
-    <footer>Josselyn Ludeña DV005</footer>
+    <footer>Copyright (C) 2014 Microsoft Corporation. Todos los derechos reservados.Josselyn Ludeña DV005</footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
